@@ -22,3 +22,6 @@
 - [ ] Text template für die plaintext version des newsletters
 
 - [ ] newsletter abmelden link veknüpfen
+
+- [ ] mobile view anpassen, das seiten padding ist für mobile noch zu groß (iPhone 5/SE),
+vielleicht die font size auch noch ein wenig kleiner machen (mit @media query)
