@@ -11,7 +11,7 @@
 - [ ] Link buttons mit links versehen
 - [X] Link button hover color
 - [ ] Logo in header einbetten
-- [ ] Logo in footer einbetten
+- [X] Logo in footer einbetten
 
 - [X] Inhaltsverzeichnis mit anker links versehen
 
@@ -25,3 +25,4 @@
 
 - [ ] mobile view anpassen, das seiten padding ist für mobile noch zu groß (iPhone 5/SE),
 vielleicht die font size auch noch ein wenig kleiner machen (mit @media query)
+  - [ ] logo im footer anders darstellen on mobile
