@@ -7,8 +7,9 @@
 - [ ] Bilder extern hosten und einbinden
 - [ ] html Email als website hosten, dass wir den fallback "im Browser ansehen" link bestücken können
 
+- [ ] Im header bild das wort 'News' und die Nummer der Ausgabe des newsletters
 - [ ] Link buttons mit links versehen
-- [ ] Link button hover color
+- [X] Link button hover color
 - [ ] Logo in header einbetten
 - [ ] Logo in footer einbetten
 
