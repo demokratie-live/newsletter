@@ -13,7 +13,7 @@
 - [ ] Logo in header einbetten
 - [ ] Logo in footer einbetten
 
-- [ ] Inhaltsverzeichnis mit anker links versehen
+- [X] Inhaltsverzeichnis mit anker links versehen
 
 - [ ] Spenden Fortschritts 'anzeige' (notfalls auch einfach nur als bild einbetten)
 
