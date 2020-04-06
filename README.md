@@ -1,4 +1,4 @@
-# Neuer geiler Newsletter #
+# Neuer Projekt-Newsletter #
 
 
 
