@@ -4,8 +4,11 @@
 
 # Progress / TODO:
 
-- [ ] Bilder extern hosten und einbinden
-- [ ] html Email als website hosten, dass wir den fallback "im Browser ansehen" link bestücken können
+- [X] Bilder extern hosten und einbinden
+  - mailtrain übernimmt das
+
+- [X] html Email als website hosten, dass wir den fallback "im Browser ansehen" link bestücken können
+  - mailtrain übernimmt das
 
 - [ ] Im header bild das wort 'News' und die Nummer der Ausgabe des newsletters
 - [ ] Link buttons mit links versehen
@@ -21,7 +24,7 @@
 
 - [ ] Text template für die plaintext version des newsletters
 
-- [ ] newsletter abmelden link veknüpfen
+- [X] newsletter abmelden link veknüpfen
 
 - [ ] mobile view anpassen, das seiten padding ist für mobile noch zu groß (iPhone 5/SE),
 vielleicht die font size auch noch ein wenig kleiner machen (mit @media query)
