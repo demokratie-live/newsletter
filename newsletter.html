@@ -17,8 +17,14 @@
         font-size: 19px;
       }
 
-      a, a:visited {
+      a,
+      a:visited {
         color: inherit;
+      }
+
+      .anrede {
+        color: #4f80bd;
+        font-size: 24px;
       }
 
       div.page {
@@ -49,9 +55,6 @@
         padding-bottom: 6px;
         margin-bottom: 6px;
         text-decoration: none;
-      }
-
-      div.section {
       }
 
       div.section > h1 {
@@ -95,12 +98,18 @@
         font-size: 19px;
       }
 
-      div.section-btn > a:hover, div.section-btn > a:focus {
-          background-color: #4468bd;
+      div.section-btn > a:hover,
+      div.section-btn > a:focus {
+        background-color: #4468bd;
       }
 
       p.donation-footnote {
         font-size: 11px;
+      }
+
+      div.content {
+        background: white;
+        padding: 50px;
       }
 
       div.footer {
@@ -128,6 +137,97 @@
         font-style: italic;
         text-decoration: none;
       }
+
+      /* Tablet */
+      @media (width <= 768px) {
+        body,
+        p {
+          font-size: 18px;
+        }
+
+        div.content,
+        div.footer {
+          padding: 30px;
+        }
+
+        div.signatures > img {
+          width: 150px;
+        }
+
+        div.toc {
+          margin-left: -30px;
+        }
+
+        div.toc > a {
+          padding-left: 30px;
+        }
+
+        div.footer > .logo {
+          width: 82px;
+          height: 82px;
+          top: -28px;
+          right: 19px;
+        }
+      }
+
+      /* Smartphone */
+      @media (width <= 380px) {
+        body,
+        p {
+          font-size: 16px;
+        }
+
+        .anrede {
+          font-size: 17px;
+        }
+
+        div.content,
+        div.footer {
+          padding: 10px;
+        }
+
+        div.signatures > img {
+          width: 90px;
+        }
+
+        div.toc {
+          margin-top: 12px;
+          margin-left: -10px;
+        }
+
+        div.toc > a {
+          padding-left: 10px;
+        }
+
+        div.footer {
+          padding-top: 4px;
+        }
+
+        div.footer > .logo {
+          width: 56px;
+          height: 56px;
+          top: -20px;
+          right: 8px;
+        }
+
+        div.footer > h3 {
+          font-size: 16px;
+        }
+
+        div.section-btn {
+          margin-top: 51px;
+          margin-bottom: 28px;
+        }
+
+        div.section-btn > a {
+          font-size: 16px;
+          top: -25px;
+        }
+
+        div.section p {
+          text-align: justify;
+        }
+      }
     </style>
   </head>
   <body>
@@ -137,10 +237,10 @@
     </div>
     <div class="page">
       <img src="./email/news-bg.png" style="width: 100%;" />
-      <div style="background: white; padding: 50px;">
+      <div class="content">
         <div><!-- Header bild und text--></div>
         <div>
-          <p style="color:#4F80BD; font-size: 24px;">
+          <p class="anrede">
             <b>Hallo Liebe(r) [MERGE_FIRST_NAME],</b>
           </p>
           <p>
@@ -322,12 +422,14 @@
             >+49 176 470 40 213</a
           ><br />
           E-Mail:
-          <a class="reset-footer-link" href="mailto:contact@democracy-deutschland.de"
+          <a
+            class="reset-footer-link"
+            href="mailto:contact@democracy-deutschland.de"
             >contact@democracy-deutschland.de</a
           ><br />
         </p>
         <div class="social-links">
-          <a class="reset-footer-link"  href="">Facebook</a>
+          <a class="reset-footer-link" href="">Facebook</a>
           <!-- Shouldn't be discord and the other links be here too?-->
         </div>
         <a href="[LINK_UNSUBSCRIBE]" class="unsubscribe">Newsletter abmelden</a>

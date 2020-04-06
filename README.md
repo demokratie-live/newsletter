@@ -26,6 +26,8 @@
 
 - [X] newsletter abmelden link veknüpfen
 
-- [ ] mobile view anpassen, das seiten padding ist für mobile noch zu groß (iPhone 5/SE),
+- [X] mobile view anpassen, das seiten padding ist für mobile noch zu groß (iPhone 5/SE),
 vielleicht die font size auch noch ein wenig kleiner machen (mit @media query)
-  - [ ] logo im footer anders darstellen on mobile
+  - [X] logo im footer anders darstellen on mobile
+
+- [ ] CSS - apply some kind of reset sheet
