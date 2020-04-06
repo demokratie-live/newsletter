@@ -11,9 +11,9 @@
   - mailtrain übernimmt das
 
 - [ ] Im header bild das wort 'News' und die Nummer der Ausgabe des newsletters
-- [ ] Link buttons mit links versehen
-- [X] Link button hover color
 - [ ] Logo in header einbetten
+- [X] Link button hover color
+- [ ] Link buttons mit links versehen
 - [X] Logo in footer einbetten
 
 - [X] Inhaltsverzeichnis mit anker links versehen
@@ -22,7 +22,7 @@
 
 - [ ] Social links im footer (fb braucht noch evtl. nen icon und links zu discord und co fehlen noch)
 
-- [ ] Text template für die plaintext version des newsletters
+- [X] Text template für die plaintext version des newsletters
 
 - [X] newsletter abmelden link veknüpfen
 
