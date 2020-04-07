@@ -18,7 +18,7 @@
 
 - [X] Inhaltsverzeichnis mit anker links versehen
 
-- [ ] Spenden Fortschritts 'anzeige' (notfalls auch einfach nur als bild einbetten)
+- [X] Spenden Fortschritts 'anzeige' (notfalls auch einfach nur als bild einbetten)
 
 - [ ] Social links im footer (fb braucht noch evtl. nen icon und links zu discord und co fehlen noch)
 

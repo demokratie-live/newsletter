@@ -138,6 +138,44 @@
         text-decoration: none;
       }
 
+      div.donation-state > div {
+        text-align: center;
+        color: #4f80bd;
+      }
+
+      div.progressbar {
+        height: 38px;
+        width: 338px;
+        margin: auto;
+        position: relative;
+        background-color: #e4e4e4;
+        margin-top: 13px;
+        margin-bottom: 50px;
+      }
+
+      div.progressbar > div.progress {
+        background-color: #4f80bd;
+        background-image: url("./email/progress-texture.png");
+        background-repeat: repeat-x;
+        background-size: revert;
+        height: 100%;
+      }
+
+      div.current {
+        font-size: 132px;
+        font-weight: bold;
+        letter-spacing: 17px;
+      }
+
+      div.current::after {
+        content: "€";
+        position: absolute;
+      }
+
+      div.goal {
+        font-size: 30px;
+      }
+
       /* Tablet */
       @media (width <= 768px) {
         body,
@@ -170,8 +208,23 @@
         }
       }
 
+      /* In between thing mainly for the donation counter */
+      @media (width <= 555px) {
+        div.current {
+          font-size: 90px;
+        }
+        div.goal {
+          font-size: 27px;
+        }
+        div.progressbar {
+          height: 32px;
+          width: 257px;
+          margin-bottom: 34px;
+        }
+      }
+
       /* Smartphone */
-      @media (width <= 380px) {
+      @media (width <= 386px) {
         body,
         p {
           font-size: 16px;
@@ -226,6 +279,20 @@
 
         div.section p {
           text-align: justify;
+        }
+
+        div.current {
+          font-size: 60px;
+          letter-spacing: 10px;
+        }
+
+        div.goal {
+          font-size: 19px;
+        }
+
+        div.progressbar {
+          height: 24px;
+          width: 166px;
         }
       }
     </style>
@@ -376,6 +443,17 @@
         </div>
 
         <!-- TODO spenden counter -->
+
+        <div class="donation-state">
+          <div class="current">5311</div>
+          <div class="goal">
+            <b><small>von</small> 9.875€</b>
+          </div>
+          <div>(min. Finanzierungsziel/Monat)</div>
+          <div class="progressbar">
+            <div class="progress" style="width:53.78%"></div>
+          </div>
+        </div>
 
         <div>
           <h1>Spendenkonto</h1>
