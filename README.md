@@ -23,7 +23,7 @@
 
 - [X] Spenden Fortschritts 'anzeige' (notfalls auch einfach nur als bild einbetten)
 
-- [ ] Social links im footer (fb braucht noch evtl. nen icon und links zu discord und co fehlen noch)
+- [X] Social links im footer (fb braucht noch evtl. nen icon und links zu discord und co fehlen noch)
 
 - [X] Text template für die plaintext version des newsletters
 
