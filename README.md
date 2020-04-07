@@ -10,10 +10,13 @@
 - [X] html Email als website hosten, dass wir den fallback "im Browser ansehen" link bestücken können
   - mailtrain übernimmt das
 
-- [ ] Im header bild das wort 'News' und die Nummer der Ausgabe des newsletters
-- [ ] Logo in header einbetten
+- [X] Im header bild das wort 'News' und die Nummer der Ausgabe des newsletters
+- [X] Logo in header einbetten
+- [ ] Generator für header image basteln
+  - evtl. ein svg bild, dass dann mit irgeneinem cli programm gerendert werden kann auf einem system wo die schrifftarten instaliert sind (inkscape kann man sicher als cli programm verwenden `man inkscape` sieht vielversprechend aus)
 - [X] Link button hover color
 - [ ] Link buttons mit links versehen
+- [ ] Fehlende Bilder einfügen
 - [X] Logo in footer einbetten
 
 - [X] Inhaltsverzeichnis mit anker links versehen
