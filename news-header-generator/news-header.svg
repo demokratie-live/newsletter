@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg2"
+   width="1600"
+   height="615"
+   viewBox="0 0 1600 615"
+   sodipodi:docname="news-header.svg"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1014"
+     id="namedview4"
+     showgrid="false"
+     inkscape:zoom="0.59573745"
+     inkscape:cx="797.79018"
+     inkscape:cy="215.13699"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer1"
+     style="display:inline;opacity:1">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#434343;stroke-width:0.40000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.68292685"
+       id="rect826"
+       width="1698.7349"
+       height="802.36688"
+       x="-25.178877"
+       y="-56.436722"
+       ry="61.2686" />
+    <image
+       xlink:href="res/news-bg.png"
+       y="-4.7477746"
+       x="-0.79462373"
+       id="image844"
+       preserveAspectRatio="none"
+       height="461.42548"
+       width="1601.9816" />
+    <image
+       xlink:href="res/logo.png"
+       y="293.06662"
+       x="1231.6505"
+       id="image859"
+       preserveAspectRatio="none"
+       height="281.47168"
+       width="281.47168" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:75.50526428px;line-height:1.25;font-family:'DK Drop Dead Gorgeous';-inkscape-font-specification:'DK Drop Dead Gorgeous';letter-spacing:0px;word-spacing:0px;fill:#4f7fbc;fill-opacity:1;stroke:none;stroke-width:1.88763154"
+       x="197.99686"
+       y="513.29541"
+       id="text864"><tspan
+         sodipodi:role="line"
+         id="tspan862"
+         x="197.99686"
+         y="513.29541"
+         style="font-size:362.42526245px;fill:#4f7fbc;fill-opacity:1;stroke-width:1.88763154">[number]</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot866"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+         id="flowRegion868"><rect
+           id="rect870"
+           width="60.429302"
+           height="48.679161"
+           x="-112.46564"
+           y="210.45938" /></flowRegion><flowPara
+         id="flowPara872" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot829"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#4f7fbc;fill-opacity:1;stroke:none"
+       transform="matrix(2.1500705,0,0,2.1500705,663.23911,-275.09849)"><flowRegion
+         id="flowRegion831"
+         style="fill:#4f7fbc;fill-opacity:1"><rect
+           id="rect833"
+           width="139.32312"
+           height="110.78706"
+           x="-271.93188"
+           y="278.44235"
+           style="fill:#4f7fbc;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara835"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:96px;font-family:Lato;-inkscape-font-specification:'Lato Bold';fill:#4f7fbc;fill-opacity:1">#</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:55.45263672px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.38631594"
+       x="97.035477"
+       y="264.07394"
+       id="text827"
+       transform="scale(0.98307827,1.017213)"><tspan
+         sodipodi:role="line"
+         id="tspan825"
+         x="97.035477"
+         y="264.07394"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:133.08631897px;font-family:Lato;-inkscape-font-specification:'Lato Bold';fill:#ffffff;stroke-width:1.38631594">NEWS</tspan></text>
+  </g>
+</svg>

@@ -12,7 +12,7 @@
 
 - [X] Im header bild das wort 'News' und die Nummer der Ausgabe des newsletters
 - [X] Logo in header einbetten
-- [ ] Generator für header image basteln
+- [X] Generator für header image basteln
   - evtl. ein svg bild, dass dann mit irgeneinem cli programm gerendert werden kann auf einem system wo die schrifftarten instaliert sind (inkscape kann man sicher als cli programm verwenden `man inkscape` sieht vielversprechend aus)
 - [X] Link button hover color
 - [ ] Link buttons mit links versehen
