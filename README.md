@@ -36,3 +36,5 @@ vielleicht die font size auch noch ein wenig kleiner machen (mit @media query)
 - [ ] CSS - apply some kind of reset sheet
 
 - [ ] Auf den 10 häufigsten Email clients testen
+
+- [ ] unsere Unterschriften in den Newsletter
