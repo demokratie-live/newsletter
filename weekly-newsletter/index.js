@@ -29,7 +29,7 @@ async function main() {
   );
 
   const data = {
-    title: `Democracy Sitzungswoche KW${daten.kw}`,
+    title: `DEMOCRACY Sitzungswoche KW${daten.kw}`,
     donation_state: await fetchDonationState(),
     topics: daten.topics,
     // internal / not-data-related

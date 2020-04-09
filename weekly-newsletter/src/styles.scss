@@ -3,6 +3,14 @@ body {
   background-color: beige;
 }
 
+.html-link {
+  text-align: center;
+  width: 100%;
+  &>a{
+    text-decoration: underline dotted blue 2px;
+  }
+}
+
 p {
   line-height: 1.3;
   font-size: 19px;
@@ -10,7 +18,7 @@ p {
 
 img.social {
   padding-left: 3px;
-  filter: unqoute("invert()"); // this is likely not supported everywhere
+  filter: unquote("invert()"); // this is likely not supported everywhere
 }
 
 a {
