@@ -20,7 +20,7 @@ Marius Krüger & Manuel Ruck
 
 Dieser Newsletter wurde durch eure Spenden finanziert:
 
-<%= donation_state.current %>€ von <%= donation_state.goal %>€ (min. Finanzierungsziel/Monat)
+<%= donation_state.goal - donation_state.current %>€ von <%= donation_state.goal %>€ (min. Finanzierungsziel/Monat) fehlen noch.
 
 ❭<%- (_=>{
     const current = Math.round(donation_state.current / donation_state.goal * 10)

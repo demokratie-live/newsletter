@@ -17,10 +17,10 @@ Marius Krüger & Manuel Ruck
 -> <%= element.link %>
     <% }) %>
 <% }) %>
-Spenden fortschritt*
+Spendenfortschritt
 --------------------
 
-<%= donation_state.current %>€ von <%= donation_state.goal %>€ (min. Finanzierungsziel/Monat)
+<%= donation_state.goal-donation_state.current %>€ von <%= donation_state.goal %>€ (min. Finanzierungsziel/Monat) fehlen noch.
 
 ❭<%- (_=>{
     const current = Math.round(donation_state.current / donation_state.goal * 10)
@@ -35,6 +35,7 @@ Stand: <%=donation_state.date %>
 Spendenkonto
 -------------
 Unsere Bankverbindung für direkte Spenden, Überweisungen oder Daueraufträge lautet:
+
 Kontoinhaber:  DEMOCRACY Deutschland e.V.
 IBAN:  DE33 5003 1000 1049 7560 00
 BIC:  TRODDEF1
@@ -47,5 +48,5 @@ Der Verein DEMOCRACY Deutschland e.V. ist mit Bescheid des Finanzamts Göttingen
 
 Mehr informationen auf https://www.democracy-deutschland.de/#!donate
 
-Sie können die HTML version dieser email hier im browser ansehen:  [LINK_BROWSER]
-Hier können Sie sich von Diesem Newsletter abmelden: [LINK_UNSUBSCRIBE]
+Sie können die HTML-Version dieser Email hier im Browser ansehen:  [LINK_BROWSER]
+Hier können Sie sich von diesem Newsletter abmelden: [LINK_UNSUBSCRIBE]

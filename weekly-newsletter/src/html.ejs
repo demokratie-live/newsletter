@@ -13,7 +13,7 @@
     <a href="[LINK_BROWSER]">hier</a> im Browser öffnen
   </div><br>
   <div class="page">
-    <img src="./email/header-screenshot.png" style="width: 100%" /><!-- TODO header generation -->
+    <img src="../img/vorlage-header.png" style="width: 100%" /><!-- TODO header generation -->
     <div class="content">
       <div>
         <p class="anrede">
@@ -69,20 +69,23 @@
     </div>
     <img src="../img/danke.jpeg" style="width: 100%" />
     <div class="content">
-
-      <!-- todo jetzt unterstützer werden ding zettel https://www.democracy-deutschland.de/#!donate -->
-
+      <h1>Aktueller Spendenstand</h1>
       <div class="donation-state">
-        <div class="current"><%= donation_state.current %></div>
+        <div class="current"><%= donation_state.goal - donation_state.current %></div>
         <div class="goal">
           <b><small>von</small> <%= donation_state.goal %>€</b>
         </div>
-        <div>(min. Finanzierungsziel/Monat)</div>
+        <div>(min. Finanzierungsziel/Monat) fehlen noch.</div>
         <div class="progressbar">
           <div class="progress" style="width:<%= Math.round(donation_state.current / donation_state.goal * 10000) / 100 %>%">.</div>
         </div>
+        <div class="more-info">
+            <a style="color: #000;" href="https://www.democracy-deutschland.de/#!donate">Mehr Informationen zum Spendenbedarf</a>
+        </div>
         <div style="float:right">Stand: <%=donation_state.date %></div>
       </div>
+
+<!-- todo jetzt unterstützer werden ding zettel https://www.democracy-deutschland.de/#!donate -->
 
       <div>
         <h1>Spendenkonto</h1>
