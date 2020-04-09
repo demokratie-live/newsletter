@@ -140,7 +140,7 @@ div.progressbar {
   margin-bottom: 50px;
   & > div.progress {
     background-color: #4f80bd;
-    background-image: url("../img/progress-texture.png"); // todo inline als base64
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAABMCAYAAAA4NXTJAAABaklEQVR42u3buw3CQBCEYfgDMhIKoj3qoiESMhIoAZ+9jxlpiW2NPgTnu7H2fH88v6fCz+V6q4w7UR34eb9qgR3faiWSrp9OFZLO/0cFku5FIBuJwkqXiURlOc9CovTMykCi9mCORrLlImckWy90RbJysSOS1RvckOy5yQnJ3htdkBwJdUByNFQdSUSoMpKoUFUkkaGKSKJD1ZBkhCohyQpVQZIZqoAkO7QbSUVoJ5Kq0C4klaEdyFJgB5LqlyHVSKKqAVUkUdWAKpKoakAVSVQ1oIokqhpQRRJVDagiiaoGVJF/H/TuyE07GWfk5q2aK3JpL+qIXN5suyF3nSackLuPSy7IQ+dBB+ThA686MuREr4wMqyxUkaGdjCIyvHRSQ6a0akrItNpQBZnaiyog04vfbmRJs92JLKvuu5Cl7yY6kDMY4o6cwRB35AyGuCNnMMQdOYMh7sgZDHFHzmCIO3IGQ9yRMxjijvwBXI3hQm8QWHgAAAAASUVORK5CYII=");
     background-repeat: repeat-x;
     background-size: revert;
     height: 100%;
