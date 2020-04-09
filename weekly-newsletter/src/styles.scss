@@ -38,70 +38,57 @@ div.signatures {
   width: 100%;
 }
 
-div.signatures > img {
-  width: 170px;
+div.signatures {
+  & > img {
+    width: 170px;
+  }
 }
 
 div.toc {
   margin-left: -50px;
+  a {
+    padding-left: 50px;
+    background-color: #4f80bd;
+    display: inline-block;
+    padding-right: 25px;
+    color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
+    text-decoration: none;
+  }
 }
 
-div.toc > a {
-  padding-left: 50px;
-  background-color: #4f80bd;
-  display: inline-block;
-  padding-right: 25px;
-  color: white;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  margin-bottom: 6px;
-  text-decoration: none;
-}
+div.section {
+  & > h1 {
+    font-weight: normal;
+    & > b {
+      color: #4f80bd;
+    }
+  }
+  & > .banner {
+    position: relative;
+    & > div {
+      position: absolute;
+      right: 26px;
+      top: -30px;
+      z-index: 9;
+      img {
+        width: 64px;
+        margin-left: 10px;
+      }
+    }
+    & > img {
+      width: 100%;
+    }
+  }
 
-div.section > h1 {
-  font-weight: normal;
-}
-
-div.section > h1 > b {
-  color: #4f80bd;
-}
-
-div.section > img {
-  width: 100%;
-}
-
-div.section-btn {
-  position: relative;
-  margin-top: 60px;
-  height: 30px;
-  margin-bottom: 50px;
-}
-
-div.section-btn > hr {
-  border: none;
-  height: 1pt;
-  background-color: #cad9eb;
-}
-
-div.section-btn > a {
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-  background-color: #4f80bd;
-  text-transform: uppercase;
-  padding: 16px 14px;
-  border-radius: 9px;
-  position: absolute;
-  top: -27px;
-  display: block;
-  left: 50%;
-  transform: translate(-50%, 0);
-  font-size: 19px;
-}
-
-div.section-btn > a:hover,
-div.section-btn > a:focus {
-  background-color: #4468bd;
+  hr {
+    border: none;
+    height: 1pt;
+    background-color: #cad9eb;
+    margin-bottom: 56px;
+  }
 }
 
 p.donation-footnote {
@@ -118,14 +105,13 @@ div.footer {
   background: #4f80bd;
   padding: 50px;
   position: relative;
-}
-
-div.footer > .logo {
-  width: 126px;
-  height: 126px;
-  top: -40px;
-  position: absolute;
-  right: 70px;
+  & > .logo {
+    width: 126px;
+    height: 126px;
+    top: -40px;
+    position: absolute;
+    right: 70px;
+  }
 }
 
 .reset-footer-link {
@@ -152,14 +138,13 @@ div.progressbar {
   background-color: #e4e4e4;
   margin-top: 13px;
   margin-bottom: 50px;
-}
-
-div.progressbar > div.progress {
-  background-color: #4f80bd;
-  background-image: url("../img/progress-texture.png"); // todo inline als base64
-  background-repeat: repeat-x;
-  background-size: revert;
-  height: 100%;
+  & > div.progress {
+    background-color: #4f80bd;
+    background-image: url("../img/progress-texture.png"); // todo inline als base64
+    background-repeat: repeat-x;
+    background-size: revert;
+    height: 100%;
+  }
 }
 
 div.current {
@@ -191,6 +176,12 @@ div.goal {
 
   div.footer {
     padding: 30px;
+    .logo {
+      width: 82px;
+      height: 82px;
+      top: -28px;
+      right: 19px;
+    }
   }
 
   div.signatures > img {
@@ -199,17 +190,9 @@ div.goal {
 
   div.toc {
     margin-left: -30px;
-  }
-
-  div.toc > a {
-    padding-left: 30px;
-  }
-
-  div.footer > .logo {
-    width: 82px;
-    height: 82px;
-    top: -28px;
-    right: 19px;
+    a {
+      padding-left: 30px;
+    }
   }
 }
 
@@ -253,35 +236,22 @@ div.goal {
   div.toc {
     margin-top: 12px;
     margin-left: -10px;
-  }
-
-  div.toc > a {
-    padding-left: 10px;
+    a {
+      padding-left: 10px;
+    }
   }
 
   div.footer {
     padding-top: 4px;
-  }
-
-  div.footer > .logo {
-    width: 56px;
-    height: 56px;
-    top: -20px;
-    right: 8px;
-  }
-
-  div.footer > h3 {
-    font-size: 16px;
-  }
-
-  div.section-btn {
-    margin-top: 51px;
-    margin-bottom: 28px;
-  }
-
-  div.section-btn > a {
-    font-size: 16px;
-    top: -25px;
+    .logo {
+      width: 56px;
+      height: 56px;
+      top: -20px;
+      right: 8px;
+    }
+    h3 {
+      font-size: 16px;
+    }
   }
 
   div.section p {
