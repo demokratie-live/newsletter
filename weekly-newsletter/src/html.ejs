@@ -13,7 +13,7 @@
     <a href="[LINK_BROWSER]">hier</a> im browser öffnen
   </div>
   <div class="page">
-    <img src="./email/header-screenshot.png" style="width: 100%" />
+    <img src="./email/header-screenshot.png" style="width: 100%" /><!-- TODO header generation -->
     <div class="content">
       <div>
         <p class="anrede">
@@ -70,7 +70,7 @@
     <img src="../img/danke.jpeg" style="width: 100%" />
     <div class="content">
 
-      <!-- todo jetzt unterstützer werden ding zettel -->
+      <!-- todo jetzt unterstützer werden ding zettel https://www.democracy-deutschland.de/#!donate -->
 
       <div class="donation-state">
         <div class="current"><%= donation_state.current %></div>
@@ -81,6 +81,7 @@
         <div class="progressbar">
           <div class="progress" style="width:<%= Math.round(donation_state.current / donation_state.goal * 10000) / 100 %>%">.</div>
         </div>
+        <div style="float:right">Stand: <%=donation_state.date %></div>
       </div>
 
       <div>

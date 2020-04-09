@@ -1,3 +1,5 @@
+const got = require("got");
+
 async function fetchData() {
   const topics = [
     {
@@ -109,9 +111,24 @@ async function fetchData() {
 }
 
 async function fetchDonationState() {
+  const api_result = await got(
+    "https://www.democracy-deutschland.de/api.php?call=donation_status"
+  ).json();
+
+  if (!api_result.status) {
+    throw new Error("api response status === false");
+  }
+
+  const {
+    donation_date,
+    donation_value,
+    donation_value_goal
+  } = api_result.result;
+
   return {
-    current: 5311,
-    goal: 9875
+    current: donation_value,
+    goal: donation_value_goal,
+    date: donation_date
   };
 }
 

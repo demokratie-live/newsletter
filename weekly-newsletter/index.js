@@ -42,6 +42,10 @@ async function main() {
     await renderFile("src/html.ejs", data)
   );
   await fs.writeFile("dist/result.txt", await renderFile("src/text.ejs", data));
+  await fs.writeFile(
+    "dist/instant-message.txt",
+    await renderFile("src/im.ejs", data)
+  );
 }
 
 main();
