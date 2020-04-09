@@ -1,0 +1,304 @@
+body {
+  /* todo prefered fonts */
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: beige;
+}
+
+p {
+  line-height: 1.3;
+  font-size: 19px;
+}
+
+img.social {
+  padding-left: 3px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+.anrede {
+  color: #4f80bd;
+  font-size: 24px;
+}
+
+div.page {
+  max-width: 956px;
+  margin: auto;
+  background: white;
+}
+
+div.signatures {
+  text-align: right;
+  width: 100%;
+}
+
+div.signatures > img {
+  width: 170px;
+}
+
+div.toc {
+  margin-left: -50px;
+}
+
+div.toc > a {
+  padding-left: 50px;
+  background-color: #4f80bd;
+  display: inline-block;
+  padding-right: 25px;
+  color: white;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+
+div.section > h1 {
+  font-weight: normal;
+}
+
+div.section > h1 > b {
+  color: #4f80bd;
+}
+
+div.section > img {
+  width: 100%;
+}
+
+div.section-btn {
+  position: relative;
+  margin-top: 60px;
+  height: 30px;
+  margin-bottom: 50px;
+}
+
+div.section-btn > hr {
+  border: none;
+  height: 1pt;
+  background-color: #cad9eb;
+}
+
+div.section-btn > a {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background-color: #4f80bd;
+  text-transform: uppercase;
+  padding: 16px 14px;
+  border-radius: 9px;
+  position: absolute;
+  top: -27px;
+  display: block;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 19px;
+}
+
+div.section-btn > a:hover,
+div.section-btn > a:focus {
+  background-color: #4468bd;
+}
+
+p.donation-footnote {
+  font-size: 11px;
+}
+
+div.content {
+  padding: 50px;
+  padding-top: 0;
+}
+
+div.footer {
+  color: white;
+  background: #4f80bd;
+  padding: 50px;
+  position: relative;
+}
+
+div.footer > .logo {
+  width: 126px;
+  height: 126px;
+  top: -40px;
+  position: absolute;
+  right: 70px;
+}
+
+.reset-footer-link {
+  color: white;
+  text-decoration: none;
+}
+
+a.unsubscribe {
+  color: white;
+  font-style: italic;
+  text-decoration: none;
+}
+
+div.donation-state > div {
+  text-align: center;
+  color: #4f80bd;
+}
+
+div.progressbar {
+  height: 38px;
+  width: 338px;
+  margin: auto;
+  position: relative;
+  background-color: #e4e4e4;
+  margin-top: 13px;
+  margin-bottom: 50px;
+}
+
+div.progressbar > div.progress {
+  background-color: #4f80bd;
+  background-image: url("../img/progress-texture.png"); // todo inline als base64
+  background-repeat: repeat-x;
+  background-size: revert;
+  height: 100%;
+}
+
+div.current {
+  font-size: 132px;
+  font-weight: bold;
+  letter-spacing: 17px;
+}
+
+div.current::after {
+  content: "€";
+  position: absolute;
+}
+
+div.goal {
+  font-size: 30px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  body,
+  p {
+    font-size: 18px;
+  }
+
+  div.content {
+    padding: 30px;
+    padding-top: 0;
+  }
+
+  div.footer {
+    padding: 30px;
+  }
+
+  div.signatures > img {
+    width: 150px;
+  }
+
+  div.toc {
+    margin-left: -30px;
+  }
+
+  div.toc > a {
+    padding-left: 30px;
+  }
+
+  div.footer > .logo {
+    width: 82px;
+    height: 82px;
+    top: -28px;
+    right: 19px;
+  }
+}
+
+/* In between thing mainly for the donation counter */
+@media (max-width: 555px) {
+  div.current {
+    font-size: 90px;
+  }
+
+  div.goal {
+    font-size: 27px;
+  }
+
+  div.progressbar {
+    height: 32px;
+    width: 257px;
+    margin-bottom: 34px;
+  }
+}
+
+/* Smartphone */
+@media (max-width: 386px) {
+  body,
+  p {
+    font-size: 16px;
+  }
+
+  .anrede {
+    font-size: 17px;
+  }
+
+  div.content,
+  div.footer {
+    padding: 10px;
+  }
+
+  div.signatures > img {
+    width: 90px;
+  }
+
+  div.toc {
+    margin-top: 12px;
+    margin-left: -10px;
+  }
+
+  div.toc > a {
+    padding-left: 10px;
+  }
+
+  div.footer {
+    padding-top: 4px;
+  }
+
+  div.footer > .logo {
+    width: 56px;
+    height: 56px;
+    top: -20px;
+    right: 8px;
+  }
+
+  div.footer > h3 {
+    font-size: 16px;
+  }
+
+  div.section-btn {
+    margin-top: 51px;
+    margin-bottom: 28px;
+  }
+
+  div.section-btn > a {
+    font-size: 16px;
+    top: -25px;
+  }
+
+  div.section p {
+    text-align: justify;
+  }
+
+  div.current {
+    font-size: 60px;
+    letter-spacing: 10px;
+  }
+
+  div.goal {
+    font-size: 19px;
+  }
+
+  div.progressbar {
+    height: 24px;
+    width: 166px;
+  }
+}
