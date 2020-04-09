@@ -18,7 +18,7 @@
       width: 100%;
     }
 
-    .html-link > a, .donation-footnote > a {
+    .html-link > a, .donation-footnote > a, div.more-info a {
       text-decoration: underline dotted blue 2px;
     }
 
@@ -126,6 +126,7 @@
 
     p.donation-footnote {
       font-size: 11px;
+      margin-top: 20px;
     }
 
     div.content {
@@ -171,7 +172,7 @@
       position: relative;
       background-color: #e4e4e4;
       margin-top: 32px;
-      margin-bottom: 50px;
+      margin-bottom: 28px;
     }
 
     div.progressbar>div.progress {
@@ -196,6 +197,11 @@
 
     div.goal {
       font-size: 30px;
+    }
+
+    div.more-info {
+      margin-bottom: 50px;
+      text-align: center;
     }
 
     /* Tablet */
@@ -481,9 +487,12 @@
         <div class="goal">
           <b><small>von</small> 9.875€</b>
         </div>
-        <div>(min. Finanzierungsziel/Monat)</div>
+        <div>(min. Finanzierungsziel/Monat) fehlen noch</div>
         <div class="progressbar">
           <div class="progress" style="width:53.78%">.</div>
+        </div>
+        <div class="more-info">
+          <a style="color: #000;" href="https://www.democracy-deutschland.de/#!donate">Mehr Informationen zum Spendenbedarf</a>
         </div>
       </div>
 
