@@ -1,4 +1,4 @@
-Democracy News #16
+DEMOCRACY News #16
 
 Hallo (Liebe|Lieber) ${NAME},
 
