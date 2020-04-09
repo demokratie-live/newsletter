@@ -10,7 +10,7 @@ p {
 
 img.social {
   padding-left: 3px;
-  filter: invert(); // this is likely not supported everywhere
+  filter: unqoute("invert()"); // this is likely not supported everywhere
 }
 
 a {
