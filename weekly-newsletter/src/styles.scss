@@ -6,9 +6,10 @@ body {
 .html-link {
   text-align: center;
   width: 100%;
-  &>a{
-    text-decoration: underline dotted blue 2px;
-  }
+}
+
+.html-link > a, .donation-footnote > a {
+  text-decoration: underline dotted blue 2px;
 }
 
 p {
@@ -156,7 +157,7 @@ div.progressbar {
   margin: auto;
   position: relative;
   background-color: #e4e4e4;
-  margin-top: 13px;
+  margin-top: 32px;
   margin-bottom: 36px;
   & > div.progress {
     background-color: #4f80bd;
@@ -176,6 +177,7 @@ div.current {
 div.current::after {
   content: "€";
   position: absolute;
+  color: rgb(109, 109, 109);
 }
 
 div.goal {
