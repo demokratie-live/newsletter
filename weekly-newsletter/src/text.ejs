@@ -8,15 +8,18 @@ Viel Spaß beim Abstimmen.
 Ihr TEAM DEMOCRACY
 Marius Krüger & Manuel Ruck
 
-<% topics.forEach((topic, index) => { %>
+<% 
+topics.forEach((topic, index) => { %>
 <%= addNull(index + 1) %> <%= topic.title %>
 -------------------------
-    <% topic.elements.forEach((element) => { %>
+<%= topic.teaser %>
+<% topic.elements.forEach((element) => { %>
 <%= element.date %> (<%= element.typ %>)
 <%= element.teaser %>
 -> <%= element.link %>
-    <% }) %>
-<% }) %>
+<% })
+})
+%>
 Spendenfortschritt
 --------------------
 

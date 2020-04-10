@@ -1,106 +1,61 @@
 const got = require("got");
 
+async function fetchElement(id) {
+  return {
+    date: "29.7.2019",
+    typ: Math.random()>0.5?"GESETZENTWURF":"ANTRAG",
+    teaser:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...",
+    link: "##"
+  }
+}
+
 async function fetchData() {
   const topics = [
     {
       title: "Klimaschutz",
       banner: "../img/bereich-klima.jpeg",
-      elements: [
-        {
-          date: "29.7.2019",
-          typ: "GESETZENTWURF",
-          teaser:
-            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...",
-          link: "##"
-        },
-        {
-          date: "30.7.2019",
-          typ: "ANTRAG",
-          teaser:
-            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...",
-          link: "##"
-        },
-        {
-          date: "30.7.2019",
-          typ: "ANTRAG",
-          teaser:
-            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...",
-          link: "##"
-        }
-      ]
+      teaser: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...",
+      elements: await Promise.all([
+        fetchElement('_fake_id3458769'),
+        fetchElement(1),
+        fetchElement('_fake_id3458769')
+      ])
     },
     {
       title: "Postmodell",
       banner: "../img/bereich-post.jpeg",
-      elements: [
-        {
-          date: "29.7.2019",
-          typ: "GESETZENTWURF",
-          teaser:
-            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...",
-          link: "##"
-        }
-      ]
+      teaser: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...",
+      elements: await Promise.all([
+        fetchElement('_fake_id3458769'),
+      ])
     },
     {
       title: "Eisenbahn",
-      banner: "../img/bereich-klima.jpeg",
-      elements: [
-        {
-          date: "29.7.2019",
-          typ: "GESETZENTWURF",
-          teaser:
-            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...",
-          link: "##"
-        }
-      ]
+      banner: "../img/bereich-zug.jpeg",
+      teaser: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...",
+      elements: await Promise.all([
+        fetchElement('_fake_id34543255'),
+      ])
     },
     {
       title: "Auslandseinsätze",
       banner: "../img/bereich-peacekeeping.jpeg",
-      elements: [
-        {
-          date: "29.7.2019",
-          typ: "GESETZENTWURF",
-          teaser:
-            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...",
-          link: "##"
-        },
-        {
-          date: "30.7.2019",
-          typ: "ANTRAG",
-          teaser:
-            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...",
-          link: "##"
-        },
-        {
-          date: "27.7.2019",
-          typ: "ANTRAG",
-          teaser:
-            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...",
-          link: "##"
-        }
-      ]
+      teaser: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...",
+      elements: await Promise.all([
+        fetchElement('_fake_id34543255'),
+        fetchElement('1'),
+        fetchElement('1'),
+      ])
     },
     {
       title: "Sonstiges",
       banner: "../img/bereich-sonstiges.jpeg",
-      elements: [
-        {
-          date: "29.7.2019",
-          typ: "GESETZENTWURF",
-          teaser:
-            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...",
-          link: "##"
-        },
-        {
-          date: "30.7.2019",
-          typ: "ANTRAG",
-          teaser:
-            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...",
-          link: "##"
-        }
-      ]
+      teaser: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...",
+      elements: await Promise.all([
+        fetchElement('_fake_id34543255'),
+        fetchElement('1'),
+      ])
     }
   ];
 

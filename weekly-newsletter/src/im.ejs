@@ -11,6 +11,7 @@ Marius Krüger & Manuel Ruck
 
 <% topics.forEach((topic, index) => { %>
 ⭐<%= topic.title %>⭐
+<%= topic.teaser %>
 <% topic.elements.forEach((element) => { _%>
 📅<%= element.date %> (<%= element.typ %>)
 <%= element.teaser %>
