@@ -10,61 +10,6 @@ async function fetchElement(id) {
   }
 }
 
-async function fetchData() {
-  const topics = [
-    {
-      title: "Klimaschutz",
-      banner: "../img/bereich-klima.jpeg",
-      teaser: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...",
-      elements: await Promise.all([
-        fetchElement('_fake_id3458769'),
-        fetchElement(1),
-        fetchElement('_fake_id3458769')
-      ])
-    },
-    {
-      title: "Postmodell",
-      banner: "../img/bereich-post.jpeg",
-      teaser: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...",
-      elements: await Promise.all([
-        fetchElement('_fake_id3458769'),
-      ])
-    },
-    {
-      title: "Eisenbahn",
-      banner: "../img/bereich-zug.jpeg",
-      teaser: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...",
-      elements: await Promise.all([
-        fetchElement('_fake_id34543255'),
-      ])
-    },
-    {
-      title: "Auslandseinsätze",
-      banner: "../img/bereich-peacekeeping.jpeg",
-      teaser: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...",
-      elements: await Promise.all([
-        fetchElement('_fake_id34543255'),
-        fetchElement('1'),
-        fetchElement('1'),
-      ])
-    },
-    {
-      title: "Sonstiges",
-      banner: "../img/bereich-sonstiges.jpeg",
-      teaser: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...",
-      elements: await Promise.all([
-        fetchElement('_fake_id34543255'),
-        fetchElement('1'),
-      ])
-    }
-  ];
-
-  return {
-    kw: 16,
-    topics
-  };
-}
-
 async function fetchDonationState() {
   const api_result = await got(
     "https://www.democracy-deutschland.de/api.php?call=donation_status"
@@ -88,6 +33,6 @@ async function fetchDonationState() {
 }
 
 module.exports = {
-  fetchData,
+  fetchElement,
   fetchDonationState
 };

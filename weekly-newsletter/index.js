@@ -1,7 +1,8 @@
 const sass = require("node-sass");
 const { renderFile } = require("ejs");
 const fs = require("fs-extra");
-const { fetchData, fetchDonationState } = require("./src/fetch_data");
+const { fetchElement, fetchDonationState } = require("./src/fetch_data");
+const yaml = require('js-yaml')
 
 async function renderSass(file) {
   return new Promise((res, rej) => {
@@ -19,7 +20,18 @@ async function renderSass(file) {
 }
 
 async function main() {
-  const daten = await fetchData();
+  const input = yaml.load(await fs.readFile('./example_input.yml'))
+
+  const topics = await Promise.all(
+    input.topics.map(
+      async (topic)=>({
+        ...topic,
+        elements: await Promise.all(
+          topic.elements.map(elem_id => fetchElement(elem_id))
+        )
+      })
+    )
+  )
 
   await fs.ensureDir("dist");
   await fs.emptyDir("dist");
@@ -29,9 +41,9 @@ async function main() {
   );
 
   const data = {
-    title: `DEMOCRACY Sitzungswoche KW${daten.kw}`,
+    title: `DEMOCRACY Sitzungswoche KW${input.kw}`,
     donation_state: await fetchDonationState(),
-    topics: daten.topics,
+    topics,
     // internal / not-data-related
     stylesheet: "<style>" + stylesheet + "</style>",
     addNull: number => (number / 10 < 1 ? "0" + String(number) : number)

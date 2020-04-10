@@ -1,0 +1,26 @@
+kw: 18
+topics:
+  - title: Klimaschutz
+    banner: ../img/bereich-klima.jpeg
+    teaser: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...
+    elements:
+      - _fake_id3458769
+      - _fake_id7655476
+      - _fake_id5637657
+  - title: Postmodell
+    banner: ../img/bereich-post.jpeg
+    teaser: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...
+    elements:
+      - _fake_id3497769
+  - title: Eisenbahn
+    banner: ../img/bereich-zug.jpeg
+    teaser: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...
+    elements:
+      - _fake_id3123469
+  - title: Auslandseinsätze
+    banner: ../img/bereich-peacekeeping.jpeg
+    teaser: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ...
+    elements:
+      - _fake_id8458769
+      - _fake_id9655436
+      - _fake_id8637657
