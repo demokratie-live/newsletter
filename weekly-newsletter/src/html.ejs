@@ -54,15 +54,25 @@
             </div>
             <img src="<%= topic.banner %>" />
           </div>
-          <div class="teaser"><%= topic.teaser %></div>
-          <% topic.elements.forEach((element) => { %>
-            <div class="element">
-              <div class="datum"><%= element.date %></div>
-              <div class="typ"><%= element.typ %></div>
-              <div class="teaser"><%= element.teaser %></div>
-              <a class="link" href="<%= element.link %>">[O]</a><!-- open link icon -->
-            </div>
-          <% }) %>
+          <h2 class="teaser"><%= topic.teaser %></h2>
+          <table style="width: 100%;">
+            <tbody>
+                <% topic.elements.forEach((element) => { %>
+                  <tr class="element">
+                    <td>
+                      <div class="datum"><img src="../img/cal_newsletter.png" alt="📅" width="20px" /><%= element.date %></div>
+                      <div class="typ"><%= element.typ %></div>
+                      <div class="teaser"><%= element.teaser %></div>
+                    </td>
+                    <td>
+                      <a class="link" href="<%= element.link %>">
+                        <img src="../img/link_newsletter.png" alt="Open" width="20px"/>
+                      </a>
+                    </td>
+                  </tr>
+                <% }) %>
+              </tbody>
+            </table>
           <hr />
         </div>
       <% }) %>
@@ -94,7 +104,7 @@
           Unsere Bankverbindung für direkte Spenden, Überweisungen oder
           Daueraufträge lautet:
         </p>
-        <table style="margin-left: -3px">
+        <table>
           <tr>
             <td><b style="padding-right: 35px">Kontoinhaber</b></td>
             <td>DEMOCRACY Deutschland e.V.</td>

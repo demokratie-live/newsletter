@@ -8,8 +8,20 @@ body {
   width: 100%;
 }
 
-.html-link > a, .donation-footnote > a, .more-info > a {
+.html-link > a,
+.donation-footnote > a,
+.more-info > a {
   text-decoration: underline dotted blue 2px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tbody,
+tr,
+td {
+  padding: 0;
 }
 
 p {
@@ -79,9 +91,13 @@ img.hand {
 div.section {
   & > h1 {
     font-weight: normal;
+    font-size: 33px;
     & > b {
       color: #4f80bd;
     }
+  }
+  & h2.teaser {
+    font-weight: normal;
   }
   & > .banner {
     position: relative;
@@ -100,10 +116,47 @@ div.section {
     }
   }
 
+  & tr.element {
+    &>td:first-child {
+      padding-top: 30px;
+    }
+    
+    .datum {
+      margin-bottom: 15px;
+      &>img {
+        width: 19px;
+        margin-right: 10px;
+      }
+    }
+
+    .typ {
+      font-size: 23px;
+      color: #4f80bd;
+      margin-bottom: 6px;
+    }
+
+    .teaser {
+      font-size: 23px;
+      margin-bottom: 10px;
+    }
+
+    // td:last-child {
+    //   vertical-align: bottom;
+    // }
+
+    .link {
+      margin-left: 20px;
+      img {
+        width: 24px;
+      }
+    }
+  }
+
   hr {
     border: none;
     height: 1pt;
     background-color: #cad9eb;
+    margin-top: 54px;
     margin-bottom: 56px;
   }
 }
@@ -146,7 +199,7 @@ a.unsubscribe {
 
 .donation-state {
   margin-bottom: 89px;
-  &>div {
+  & > div {
     text-align: center;
     color: #4f80bd;
   }
