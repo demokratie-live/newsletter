@@ -58,6 +58,27 @@ async function main() {
     "dist/instant-message.txt",
     await renderFile("src/im.ejs", data)
   );
+
+  await run('./src/generate-header-img.sh', [input.kw])
+}
+
+const child = require('child_process')
+async function run (command, args, options) {
+  return new Promise((resolve, reject) => {
+    const p = child.spawn(command, args, options)
+    // p.stdout.pipe(process.stdout)
+    // p.stderr.pipe(process.stderr)
+    p.on('error', reject)
+    p.on('exit', (code)=>{
+      if (code != 0) {
+        p.stderr.pipe(process.stderr)
+        console.log(command + 'exited with ERR CODE '+ code)
+        reject('ERR CODE '+ code)
+      } else {
+        resolve()
+      }
+    })
+  })
 }
 
 main();

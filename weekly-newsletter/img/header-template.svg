@@ -67,7 +67,7 @@
        y="-60.381992"
        ry="61.2686" />
     <image
-       xlink:href="bundestags-kuppel.png"
+       xlink:href="img/bundestags-kuppel.png"
        width="959.68799"
        height="337.73572"
        preserveAspectRatio="none"
@@ -76,7 +76,7 @@
        y="-8.3711567"
        style="opacity:1" />
     <image
-       xlink:href="logo-256px.png"
+       xlink:href="img/logo-256px.png"
        width="168.24333"
        height="168.24333"
        preserveAspectRatio="none"
@@ -84,7 +84,7 @@
        x="733.99701"
        y="209.29079" />
     <image
-       xlink:href="zettel-textur2.png"
+       xlink:href="img/zettel-textur2.png"
        style="opacity:0.95"
        transform="rotate(-5.950841)"
        width="494.42786"
