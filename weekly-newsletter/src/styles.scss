@@ -117,13 +117,13 @@ div.section {
   }
 
   & tr.element {
-    &>td:first-child {
+    & > td:first-child {
       padding-top: 30px;
     }
-    
+
     .datum {
       margin-bottom: 15px;
-      &>img {
+      & > img {
         width: 19px;
         margin-right: 10px;
       }
@@ -158,6 +158,27 @@ div.section {
     background-color: #cad9eb;
     margin-top: 54px;
     margin-bottom: 56px;
+  }
+}
+
+div.donate-section {
+  position: relative;
+  margin-top: 151px;
+  margin-bottom: 59px;
+  & > hr {
+    border: none;
+    height: 1pt;
+    background-color: #cad9eb;
+  }
+
+  & > a {
+    position: absolute;
+    top: -49px;
+    right: 26px;
+
+    & > img {
+      width: 275px;
+    }
   }
 }
 
