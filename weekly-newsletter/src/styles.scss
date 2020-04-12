@@ -296,6 +296,10 @@ div.more-info {
       padding-left: 30px;
     }
   }
+
+  img.hand {
+    height: 254px;
+  }
 }
 
 /* In between thing mainly for the donation counter */
@@ -312,6 +316,10 @@ div.more-info {
     height: 32px;
     width: 257px;
     margin-bottom: 34px;
+  }
+
+  img.hand {
+    display: none;
   }
 }
 
@@ -338,6 +346,7 @@ div.more-info {
   div.toc {
     margin-top: 12px;
     margin-left: -10px;
+    margin-bottom: 40px;
     a {
       padding-left: 10px;
     }
@@ -372,5 +381,62 @@ div.more-info {
   div.progressbar {
     height: 24px;
     width: 166px;
+  }
+
+  div.section {
+    & > .banner > div {
+      right: 11px;
+      top: -21px;
+      img {
+        width: 42px;
+        margin-left: 2px;
+      }
+    }
+
+    h2.teaser {
+      font-size: 22px;
+    }
+
+    tr.element {
+      & > td:first-child {
+        padding-top: 16px;
+      }
+      .teaser {
+        font-size: 19px;
+      }
+      .typ {
+        font-size: 21px;
+        margin-bottom: 3px;
+      }
+      .datum {
+        margin-bottom: 5px;
+      }
+    }
+
+    hr {
+      margin-top: 22px;
+      margin-bottom: 40px;
+    }
+
+    & > h1 {
+      font-size: 30px;
+    }
+  }
+
+  div.donate-section {
+    margin-top: 109px;
+    margin-bottom: 57px;
+    & > a {
+      top: -30px;
+      right: 3px;
+
+      & > img {
+        width: 159px;
+      }
+    }
+  }
+
+  div.more-info {
+    margin-bottom: 36px;
   }
 }
