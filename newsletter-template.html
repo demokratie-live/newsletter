@@ -190,8 +190,7 @@
       letter-spacing: 17px;
     }
 
-    div.current::after {
-      content: "€";
+    div.current>span {
       position: absolute;
       color: rgb(109, 109, 109);
     }
@@ -439,10 +438,9 @@
         </div>
       </div>
 
-      <!-- TODO spenden counter -->
 
       <div class="donation-state">
-        <div class="current">5311</div>
+        <div class="current">5311<span>€</span></div>
         <div class="goal">
           <b><small>von</small> 9.875€</b>
         </div>
