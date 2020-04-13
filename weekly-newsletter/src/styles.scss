@@ -247,12 +247,10 @@ div.current {
   font-size: 132px;
   font-weight: bold;
   letter-spacing: 17px;
-}
-
-div.current::after {
-  content: "€";
-  position: absolute;
-  color: rgb(109, 109, 109);
+  & > span {
+    position: absolute;
+    color: rgb(109, 109, 109);
+  }
 }
 
 div.goal {

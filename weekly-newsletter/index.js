@@ -36,8 +36,7 @@ async function main() {
   await fs.ensureDir("dist");
   await fs.emptyDir("dist");
   const stylesheet = (await renderSass("src/styles.scss")).css.toString(
-    "utf8",
-    3 // the 3 here is to cut out some strange char before 'body'
+    "utf8"
   );
 
   const data = {
