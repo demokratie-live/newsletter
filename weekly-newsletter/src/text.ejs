@@ -1,0 +1,55 @@
+<%=title%>
+
+Hallo Liebe(r) [MERGE_FIRST_NAME],
+
+Diese Sitzungswoche warten wieder spannende Themen auf uns.
+Viel Spaß beim Abstimmen.
+
+Ihr TEAM DEMOCRACY
+Marius Krüger & Manuel Ruck
+
+<% 
+topics.forEach((topic, index) => { %>
+<%= addNull(index + 1) %> <%= topic.title %>
+-------------------------
+<%= topic.teaser %>
+<% topic.elements.forEach((element) => { %>
+<%= element.date %> (<%= element.typ %>)
+<%= element.teaser %>
+-> <%= element.link %>
+<% })
+})
+%>
+Spendenfortschritt
+--------------------
+
+<%= donation_state.goal-donation_state.current %>€ von <%= donation_state.goal %>€ (min. Finanzierungsziel/Monat) fehlen noch.
+
+❭<%- (_=>{
+    const current = Math.round(donation_state.current / donation_state.goal * 10)
+    let result = ""
+    for (let i = 0; i < current; i++) {result+= "="}
+    for (let i = 0; i < 10-current; i++) {result+= "-"}
+    return result
+})() %>❬ <%= Math.round(donation_state.current / donation_state.goal * 10000) / 100 %>%
+
+Stand: <%=donation_state.date %>
+
+Spendenkonto
+-------------
+Unsere Bankverbindung für direkte Spenden, Überweisungen oder Daueraufträge lautet:
+
+Kontoinhaber:  DEMOCRACY Deutschland e.V.
+IBAN:  DE33 5003 1000 1049 7560 00
+BIC:  TRODDEF1
+
+Der Verein DEMOCRACY Deutschland e.V. ist mit Bescheid des Finanzamts Göttingen vom 01.10.2019 als gemeinnütziger Verein zur Förderung des demokratischen Staatswesens sowie der Volks- und Berufsbildung offiziell anerkannt (Nachweis der Gemeinnützigkeit¹; Satzung²). Ihre Spenden sind daher steuerlich abzugsfähig. Für Spenden unter 200€ jährlich genügt der Zahlungsnachweis (z. B. Kontoauszug) zusammen mit unserem Vereinfachten Zuwendungsnachweis³. Wenn Sie eine separate Zuwendungsbestätigung benötigen, schreiben Sie uns bitte eine E-Mail oder geben Sie in Ihrer Überweisung Ihre Wohnadresse an.
+
+¹https://www.democracy-deutschland.de/files/download/Freistellungsbescheid.pdf
+²https://www.democracy-deutschland.de/files/download/Satzung_DEMOCRACY.pdf
+³https://www.democracy-deutschland.de/files/download/Vereinfachter_Zuwendungsnachweis_2019.pdf
+
+Mehr informationen auf https://www.democracy-deutschland.de/#!donate
+
+Sie können die HTML-Version dieser Email hier im Browser ansehen:  [LINK_BROWSER]
+Hier können Sie sich von diesem Newsletter abmelden: [LINK_UNSUBSCRIBE]

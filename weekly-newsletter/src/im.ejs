@@ -1,0 +1,34 @@
+<%# im / message for instant messaging %> <%_ _%>
+<%=title%>
+
+Hallo Liebe(r) [MERGE_FIRST_NAME],
+
+Diese Sitzungswoche warten wieder spannende Themen auf uns.
+Viel Spaß beim Abstimmen.
+
+Ihr TEAM DEMOCRACY
+Marius Krüger & Manuel Ruck
+
+<% topics.forEach((topic, index) => { %>
+⭐<%= topic.title %>⭐
+<%= topic.teaser %>
+<% topic.elements.forEach((element) => { _%>
+📅<%= element.date %> (<%= element.typ %>)
+<%= element.teaser %>
+➥ <%= element.link %>
+<% }) _%>
+<% }) _%>
+
+Dieser Newsletter wurde durch eure Spenden finanziert:
+
+<%= donation_state.goal - donation_state.current %>€ von <%= donation_state.goal %>€ (min. Finanzierungsziel/Monat) fehlen noch.
+
+❭<%- (_=>{
+    const current = Math.round(donation_state.current / donation_state.goal * 10)
+    let result = ""
+    for (let i = 0; i < current; i++) {result+= "▰"}
+    for (let i = 0; i < 10-current; i++) {result+= "▱"}
+    return result
+})() %>❬ <%= Math.round(donation_state.current / donation_state.goal * 10000) / 100 %>%
+
+➥ Jetzt spenden: https://www.democracy-deutschland.de/#!donate

@@ -1,0 +1,440 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: beige;
+}
+
+.html-link {
+  text-align: center;
+  width: 100%;
+}
+
+.html-link > a,
+.donation-footnote > a,
+.more-info > a {
+  text-decoration: underline dotted blue 2px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tbody,
+tr,
+td {
+  padding: 0;
+}
+
+p {
+  line-height: 1.3;
+  font-size: 19px;
+}
+
+img.social {
+  padding-left: 3px;
+  filter: unquote("invert()"); // this is likely not supported everywhere
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+.anrede {
+  color: #4f80bd;
+  font-size: 24px;
+}
+
+div.page {
+  max-width: 956px;
+  margin: auto;
+  background: white;
+}
+
+div.signatures {
+  text-align: right;
+  width: 100%;
+}
+
+div.signatures {
+  & > img {
+    width: 170px;
+  }
+}
+
+div.toc {
+  margin-left: -50px;
+  margin-bottom: 70px;
+  a {
+    padding-left: 50px;
+    background-color: #4f80bd;
+    display: inline-block;
+    padding-right: 25px;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 6px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+}
+
+img.hand {
+  position: absolute;
+  right: 0;
+  height: 325px;
+}
+
+div.section {
+  & > h1 {
+    font-weight: normal;
+    font-size: 33px;
+    & > b {
+      color: #4f80bd;
+    }
+  }
+  & h2.teaser {
+    font-weight: normal;
+  }
+  & > .banner {
+    position: relative;
+    & > div {
+      position: absolute;
+      right: 26px;
+      top: -30px;
+      z-index: 9;
+      img {
+        width: 64px;
+        margin-left: 10px;
+      }
+    }
+    & > img {
+      width: 100%;
+    }
+  }
+
+  & tr.element {
+    & > td:first-child {
+      padding-top: 30px;
+    }
+
+    .datum {
+      margin-bottom: 15px;
+      & > img {
+        width: 19px;
+        margin-right: 10px;
+      }
+    }
+
+    .typ {
+      font-size: 23px;
+      color: #4f80bd;
+      margin-bottom: 6px;
+    }
+
+    .teaser {
+      font-size: 23px;
+      margin-bottom: 10px;
+    }
+
+    // td:last-child {
+    //   vertical-align: bottom;
+    // }
+
+    .link {
+      margin-left: 20px;
+      img {
+        width: 24px;
+      }
+    }
+  }
+
+  hr {
+    border: none;
+    height: 1pt;
+    background-color: #cad9eb;
+    margin-top: 54px;
+    margin-bottom: 56px;
+  }
+}
+
+div.donate-section {
+  position: relative;
+  margin-top: 151px;
+  margin-bottom: 59px;
+  & > hr {
+    border: none;
+    height: 1pt;
+    background-color: #cad9eb;
+  }
+
+  & > a {
+    position: absolute;
+    top: -49px;
+    right: 26px;
+
+    & > img {
+      width: 275px;
+    }
+  }
+}
+
+p.donation-footnote {
+  font-size: 11px;
+  margin-top: 20px;
+}
+
+div.content {
+  padding: 50px;
+  padding-top: 0;
+  position: relative;
+}
+
+div.footer {
+  color: white;
+  background: #4f80bd;
+  padding: 50px;
+  position: relative;
+  & > .logo {
+    width: 126px;
+    height: 126px;
+    top: -40px;
+    position: absolute;
+    right: 70px;
+  }
+}
+
+.reset-footer-link {
+  color: white;
+  text-decoration: none;
+}
+
+a.unsubscribe {
+  color: white;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.donation-state {
+  margin-bottom: 89px;
+  & > div {
+    text-align: center;
+    color: #4f80bd;
+  }
+}
+
+div.progressbar {
+  height: 38px;
+  width: 338px;
+  margin: auto;
+  position: relative;
+  background-color: #e4e4e4;
+  margin-top: 32px;
+  margin-bottom: 28px;
+  & > div.progress {
+    background-color: #4f80bd;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAABMCAYAAAA4NXTJAAABaklEQVR42u3buw3CQBCEYfgDMhIKoj3qoiESMhIoAZ+9jxlpiW2NPgTnu7H2fH88v6fCz+V6q4w7UR34eb9qgR3faiWSrp9OFZLO/0cFku5FIBuJwkqXiURlOc9CovTMykCi9mCORrLlImckWy90RbJysSOS1RvckOy5yQnJ3htdkBwJdUByNFQdSUSoMpKoUFUkkaGKSKJD1ZBkhCohyQpVQZIZqoAkO7QbSUVoJ5Kq0C4klaEdyFJgB5LqlyHVSKKqAVUkUdWAKpKoakAVSVQ1oIokqhpQRRJVDagiiaoGVJF/H/TuyE07GWfk5q2aK3JpL+qIXN5suyF3nSackLuPSy7IQ+dBB+ThA686MuREr4wMqyxUkaGdjCIyvHRSQ6a0akrItNpQBZnaiyog04vfbmRJs92JLKvuu5Cl7yY6kDMY4o6cwRB35AyGuCNnMMQdOYMh7sgZDHFHzmCIO3IGQ9yRMxjijvwBXI3hQm8QWHgAAAAASUVORK5CYII=");
+    background-repeat: repeat-x;
+    background-size: revert;
+    height: 100%;
+  }
+}
+
+div.current {
+  font-size: 132px;
+  font-weight: bold;
+  letter-spacing: 17px;
+  & > span {
+    position: absolute;
+    color: rgb(109, 109, 109);
+  }
+}
+
+div.goal {
+  font-size: 30px;
+}
+
+div.more-info {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  body,
+  p {
+    font-size: 18px;
+  }
+
+  div.content {
+    padding: 30px;
+    padding-top: 0;
+  }
+
+  div.footer {
+    padding: 30px;
+    .logo {
+      width: 82px;
+      height: 82px;
+      top: -28px;
+      right: 19px;
+    }
+  }
+
+  div.signatures > img {
+    width: 150px;
+  }
+
+  div.toc {
+    margin-left: -30px;
+    a {
+      padding-left: 30px;
+    }
+  }
+
+  img.hand {
+    height: 254px;
+  }
+}
+
+/* In between thing mainly for the donation counter */
+@media (max-width: 555px) {
+  div.current {
+    font-size: 90px;
+  }
+
+  div.goal {
+    font-size: 27px;
+  }
+
+  div.progressbar {
+    height: 32px;
+    width: 257px;
+    margin-bottom: 34px;
+  }
+
+  img.hand {
+    display: none;
+  }
+}
+
+/* Smartphone */
+@media (max-width: 386px) {
+  body,
+  p {
+    font-size: 16px;
+  }
+
+  .anrede {
+    font-size: 17px;
+  }
+
+  div.content,
+  div.footer {
+    padding: 10px;
+  }
+
+  div.signatures > img {
+    width: 90px;
+  }
+
+  div.toc {
+    margin-top: 12px;
+    margin-left: -10px;
+    margin-bottom: 40px;
+    a {
+      padding-left: 10px;
+    }
+  }
+
+  div.footer {
+    padding-top: 4px;
+    .logo {
+      width: 56px;
+      height: 56px;
+      top: -20px;
+      right: 8px;
+    }
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  div.section p {
+    text-align: justify;
+  }
+
+  div.current {
+    font-size: 60px;
+    letter-spacing: 10px;
+  }
+
+  div.goal {
+    font-size: 19px;
+  }
+
+  div.progressbar {
+    height: 24px;
+    width: 166px;
+  }
+
+  div.section {
+    & > .banner > div {
+      right: 11px;
+      top: -21px;
+      img {
+        width: 42px;
+        margin-left: 2px;
+      }
+    }
+
+    h2.teaser {
+      font-size: 22px;
+    }
+
+    tr.element {
+      & > td:first-child {
+        padding-top: 16px;
+      }
+      .teaser {
+        font-size: 19px;
+      }
+      .typ {
+        font-size: 21px;
+        margin-bottom: 3px;
+      }
+      .datum {
+        margin-bottom: 5px;
+      }
+    }
+
+    hr {
+      margin-top: 22px;
+      margin-bottom: 40px;
+    }
+
+    & > h1 {
+      font-size: 30px;
+    }
+  }
+
+  div.donate-section {
+    margin-top: 109px;
+    margin-bottom: 57px;
+    & > a {
+      top: -30px;
+      right: 3px;
+
+      & > img {
+        width: 159px;
+      }
+    }
+  }
+
+  div.more-info {
+    margin-bottom: 36px;
+  }
+}
