@@ -208,64 +208,8 @@
       margin-bottom: 50px;
       text-align: center;
     }
-
-    /* Tablet */
-    @media (max-width: 768px) {
-
-      body,
-      p {
-        font-size: 18px;
-      }
-
-      div.content {
-        padding: 30px;
-        padding-top: 0;
-      }
-
-      div.footer {
-        padding: 30px;
-      }
-
-      div.signatures>img {
-        width: 150px;
-      }
-
-      div.toc {
-        margin-left: -30px;
-      }
-
-      div.toc>a {
-        padding-left: 30px;
-      }
-
-      div.footer>.logo {
-        width: 82px;
-        height: 82px;
-        top: -28px;
-        right: 19px;
-      }
-    }
-
-    /* In between thing mainly for the donation counter */
-    @media (max-width: 555px) {
-      div.current {
-        font-size: 90px;
-      }
-
-      div.goal {
-        font-size: 27px;
-      }
-
-      div.progressbar {
-        height: 32px;
-        width: 257px;
-        margin-bottom: 34px;
-      }
-    }
-
     /* Smartphone */
-    @media (max-width: 386px) {
-
+    /* @media (max-width: 386px) { */
       body,
       p {
         font-size: 16px;
@@ -334,6 +278,135 @@
       div.progressbar {
         height: 24px;
         width: 166px;
+      }
+    /* } */    
+    /* In between thing mainly for the donation counter */
+    @media (min-width: 386px) {
+      div.current {
+        font-size: 90px;
+      }
+
+      div.goal {
+        font-size: 27px;
+      }
+
+      div.progressbar {
+        height: 32px;
+        width: 257px;
+        margin-bottom: 34px;
+      }
+    }
+
+    /* Tablet */
+    @media (min-width: 555px) {
+
+      body,
+      p {
+        font-size: 18px;
+      }
+
+      div.content {
+        padding: 30px;
+        padding-top: 0;
+      }
+
+      div.footer {
+        padding: 30px;
+      }
+
+      div.signatures>img {
+        width: 150px;
+      }
+
+      div.toc {
+        margin-left: -30px;
+      }
+
+      div.toc>a {
+        padding-left: 30px;
+      }
+
+      div.footer>.logo {
+        width: 82px;
+        height: 82px;
+        top: -28px;
+        right: 19px;
+      }
+    }
+
+    /* Desktop */
+    @media (min-width: 768px) {
+      body {
+        font-size: initial;
+      }
+
+      p {
+        font-size: 19px;
+      }
+
+      .anrede {
+        font-size: 24px;
+      }
+
+      div.content,
+      div.footer {
+        padding: 50px;
+      }
+
+      div.signatures>img {
+        width: 170px;
+      }
+
+      div.toc {
+        margin-top: 0;
+        margin-left: -50px;
+      }
+
+      div.toc>a {
+        padding-left: 50px;
+      }
+
+      div.footer {
+        padding-top: 50px;
+      }
+
+      div.footer>.logo {
+        width: 126px;
+        height: 126px;
+        top: -40px;
+        right: 70px;
+      }
+
+      div.footer>h3 {
+        font-size: initial;
+      }
+
+      div.section-btn {
+        margin-top: 60px;
+        margin-bottom: 50px;
+      }
+
+      div.section-btn>a {
+        font-size: 19px;
+        top: -27px;
+      }
+
+      div.section p {
+        text-align: left;
+      }
+
+      div.current {
+        font-size: 132px;
+        letter-spacing: 17px;
+      }
+
+      div.goal {
+        font-size: 30px;
+      }
+
+      div.progressbar {
+        height: 38px;
+        width: 338px;
       }
     }
   </style>
